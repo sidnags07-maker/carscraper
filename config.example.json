@@ -1,0 +1,47 @@
+{
+  "_comment": "Copy this file to config.json and fill in your search. config.json is gitignored.",
+  "sources": [
+    "craigslist",
+    "cars_com",
+    "autotrader",
+    "facebook"
+  ],
+  "craigslist_site": "yourcity",
+  "zip_code": "00000",
+  "radius_miles": 100,
+  "vehicles": [
+    {
+      "make": "Volkswagen",
+      "model": "Tiguan"
+    }
+  ],
+  "price": {
+    "min": 1000,
+    "max": 30000
+  },
+  "year": {
+    "min": 2020,
+    "max": 2026
+  },
+  "max_mileage": 55000,
+  "reputation": {
+    "_note": "method 'places' uses the Google Places API (real ratings, not blocked). Set api_key or the GOOGLE_PLACES_API_KEY env var. 'browser'/'requests' scrape Google and are blocked by captcha. On-site Cars.com ratings work regardless.",
+    "external_check": true,
+    "method": "places",
+    "api_key": "",
+    "policy": "keep_flag",
+    "min_dealer_rating": 4.0,
+    "min_dealer_reviews": 10,
+    "delay_seconds": 0.2
+  },
+  "dedupe": true,
+  "max_per_dealer": 0,
+  "max_pages": 3,
+  "headless": true,
+  "delay_seconds": [
+    2.0,
+    4.0
+  ],
+  "output_csv": "cars.csv",
+  "history_db": "history.db"
+}

@@ -1,0 +1,8 @@
+.env
+.venv/
+__pycache__/
+*.pyc
+.reputation_cache.json
+cars.csv
+config.json
+history.db
