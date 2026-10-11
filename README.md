@@ -1,4 +1,4 @@
-# carscraper
+# CarWatch
 
 Find used cars near you that match your criteria, from multiple sites at once,
 with a dealer-reputation check, and track how each listing's price changes
